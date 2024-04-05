@@ -5,7 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Módulo I - Primeiros Passos com HTML</title>
+        
+        <style>
+            h1, h2, h3 {
+                text-transform: uppercase;
+            }
+
+            pre {
+                margin: 10px 30px;
+                background-color: lightgray;
+            }
+        </style>
     </head>
+    
     <body>
         <!-- Cabeçalho -->
         <h1>
@@ -17,43 +29,156 @@
         <a href="index.html">Sobre</a> |
         <a href="origin.html">Conhecendo a Web</a> |
         <a href="introduction.html">Introdução ao HTML</a>
+        <hr size="4" color="#a1a1a1"/>
+
+        <h2>Introducao ao HTML</h2>
+        <p>
+            Começando por apresentar ferramentas que te ajudam a escrever código html e investigar os elementos nos sites, depois as tags que formam a estrutra básica, algumas das tags mais utilizadas, seus atributos, a diferença entre
+            listas ordenadas e não ordenas e os links que tanto carecterizaram o HTML como uma linguagem de marcação.
+        </p>
+        
+        <h3 id="indice">Índice</h3>
+        <ul>
+            <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+            <li><a href="#tags">Falando sobre Tags</a></li>
+            <li><a href="#atributos">Atributos das Tags</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+        </ul>
         <hr />
 
-        <!-- Índice -->
-        <h2>Introducao ao HTML</h2>
-
-        <ul>
-            <li><a href="">Ferramentas Utilizadas</a></li>
-            <li><a href="">Inspetor de Elementos</a></li>
-            <li><a href="">Estrutura Básica do HTML</a></li>
-            <li><a href="">Falando sobre Tags</a></li>
-            <li><a href="">Atributos das Tags</a></li>
-            <li><a href="">Textos</a></li>
-            <li><a href="">Listas Ordenadas e Não Ordenadas</a></li>
-        </ul>
-
         <!-- Conteúdo -->
-        <h3>Ferramentas Utilizadas</h2>
-        <p></p>
+        <h3 id="estrutura">Estrutura Básica do HTML</h2>
+        <figure>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210401153104/htmlstrc.PNG" alt="estrutura básica de um html">
+            <figcaption><small>Exemplo de Estrutura de HTML</small></figcaption>
+        </figure>
+        <p>
+            Um documento HTML é dividido principalmente em duas partes: 
+            <ul>
+                <li><strong>HEAD</strong>: Contém as informações sobre o documento HTML.</li>
+                Por exemplo, o título da página, versão do HTML, metadados, etc. 
+                <li><strong>BODY</strong>: Contém tudo o que você deseja exibir na página da Web. </li>
+                
+            </ul>
+        </p>
+        <span><a href="#indice">Voltar ao topo ☝</a></span>
         
-        <h3>Inspetor de Elementos</h2>
-        <p></p>
+        <h3 id="tags">Falando sobre Tags</h2>
+        <figure>
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png" width="600px" alt="tag element">
+            <figcaption><small>Exemplo da Anatomia de uma Tag</small></figcaption>
+        </figure>
+        <p>
+            A anatomia básica de um elemento HTML consiste na tab de abertura cercada pelos sinais de menor &lt; e pelo sinal de maior &gt; 
+            e a tag de fechamento com sinal de / depois do sinal de menor.
+            Entre as tags de abertura e fechamento em algumas tags pode ser inserido o conteúdo que refletirá o efeito da tag utilizada. 
+        </p>
+        <span><a href="#indice">Voltar ao topo ☝</a></span>
+        
+        <h3 id="atributos">Atributos das Tags</h2>
+        <figure>
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png" width="600px" alt="atributo html">
+            <figcaption><smal>Exemplo de atributos da tag</smal></figcaption>
+        </figure>
+        <p>
+            Os atributos possibilitam dar um sentido maior ou classificar uma tag, não visível ao usuário na tela. 
+            Neste exemplo o atributo class permite identificar que esta tag terá um comportamente que se repetirá no site possibilitando acrescentar estilo com css e dinâmica com javascript.
+        </p>
+        <span><a href="#indice">Voltar ao topo ☝</a></span>
 
-        <h3>Estrutura Básica do HTML</h2>
-        <p></p>
+        <h3 id="textos">Textos</h2>
+        <p>
+            Serão apresentadas tags básicas que ajudam na formatação de textos como exemplo: 
+        <p>
 
-        <h3>Falando sobre Tags</h2>
-        <p></p>
+        <h4><strong>Títulos </strong>(&lt;h1&gt;)</h4>
+        <p>
+            A formatação representando o nível de importância, com títulos
+            e subtítulos &lt;h1&gt; até &lt;h6&gt;<br>
+              
+            <pre>
+                <code>
+                    &lt;h1&gt;Título 1 &lt;/h1&gt;
+                    &lt;h2&gt;Título 2 &lt;/h2&gt;
+                    &lt;h3&gt;Título 3 &lt;/h3&gt;
+                    &lt;h4&gt;Título 4&lt;/h4&gt;
+                    &lt;h5&gt;Título 5&lt;/h5&gt;
+                    &lt;h6&gt; Título 6&lt;/h6&gt;
+                </code>
+            </pre>
+            <strong>Resultado:</strong> 
+            <h1>Título 1</h1>
+            <h2>Título 2</h2>
+            <h3>Título 3</h3>
+            <h4>Título 4</h4>
+            <h5>Título 5</h5>
+            <h6>Título 6</h6>
+        </p>
 
-        <h3>Atributos das Tags</h2>
-        <p></p>
+        <h4>Parágrafos </strong>(&lt;p&gt;)</h4>
+        <p>
+            Adicionando um espaço acima e abaixo do texto (padding).
+        </p>
 
-        <h3>Textos</h2>
-        <p></p>
-
-        <h3>Listas Ordenadas e Não Ordenadas</h2>
-        <p></p>
+        <h4><strong>Blockquote </strong>(&lt;blockquote&gt;)</h4>
+        <p>
+            Permite inserir uma citação de outra fonte (&lt;cite&gt;), cujo endereço não fica visível ao usuário e o texto fica com um espaçamento interno (padding).
             
+            <blockquote>
+                HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa: "Linguagem de Marcação de Hipertexto") 
+                é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. 
+                A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+            </blockquote>
+        </p>
+        <span><a href="#indice">Voltar ao topo ☝</a></span>
 
+        <h3 id="listas">Listas Ordenadas e Não Ordenadas</h3>
+        <p> 
+            A <strong>Lista Ordenada</strong> é representada pela tag &lt;ol&gt; que significa <i>Ordered List</i>, apresenta uma lista com marcação numérica da ordem em que são apresentadas, e
+            cada um dos itens desta lista precisam estar entre a tag &lt;li&gt; que significa <i>List Item</i>.<br>
+            Como exemplo dos passos de uma receita de bolo em que há uma ordem a ser executados.
+            
+            <pre>
+                <code>
+                &lt;ol&gt; 
+                    &lt;li&gt;Misture os ingrediente no liquidificador&lt;/li&gt;
+                    &lt;li&gt;Unte a forma com manteiga e um pouco de farinha de trigo&lt;/li&gt;
+                    &lt;li&gt;Acrescente a mistura na forma&lt;/li&gt;
+                    &lt;li&gt;Leve ao forno durante 25min com 220<sup>o</sup> graus&lt;/li&gt;
+                &lt;/ol&gt;
+                </code>
+            </pre>
+            <span><strong>Resultado:</strong></span>
+                <ol> 
+                    <li>Misture os ingrediente no liquidificador</li>
+                    <li>Unte a forma com manteiga e um pouco de farinha de trigo</li>
+                    <li>Acrescente a mistura na forma</li>
+                    <li>Leve ao forno durante 25min com 220<sup>o</sup> graus</li>
+                </ol>
+        </p>
+
+        <p> 
+            A <strong>Lista Não Ordenada</strong> é representada pela tag &lt;ul&gt; que significa <i>Unordered List</i>, apresenta uma lista apenas com marcação onde a ordem dos itens não é necessária ser representada, e
+            cada um dos itens desta lista precisam estar entre a tag &lt;li&gt; que significa <i>List Item</i>.<br>
+            Como exemplo dos ingrediente de uma receita de bolo.
+            
+            <pre>
+                <code>
+                &lt;ul&gt; 
+                    &lt;li&gt;Coloque 250g de farinha&lt;/li&gt;
+                    &lt;li&gt;Acrescente 3 ovos&lt;/li&gt;
+                    &lt;li&gt;Bata no liquidificador&lt;/li&gt;
+                &lt;/ul&gt;
+                </code>
+            </pre>
+            <span><strong>Resultado:</strong></span>
+                <ul> 
+                    <li>250ml de leite</li>
+                    <li>250g de Farinha de Trigo</li>
+                    <li>3 ovos</li>
+                </ul>
+        </p>
+        <span><a href="#indice">Voltar ao topo ☝</a></span>
     </body>
 </html>

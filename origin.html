@@ -1,65 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo I - Primeiros Passos com HTML</title>
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <h1>
-      <img src="https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/r0rx7o4jm6jy2uvzt7xk" alt="Logo Dio.me" width="100px">
-       Módulo 1 - Primeiros Passos com HTML
-    </h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Módulo I - Primeiros Passos com HTML</title>
 
-    <!-- Menu de navegação sites -->
-    <a href="index.html">Sobre</a> |
-    <a href="origin.html">Conhecendo a Web</a> |
-    <a href="introduction.html">Introdução ao HTML</a>
-    <hr />
-   
-    <!-- Conteúdo -->
-    <h2 id="origem-web">Conhecendo a Web</h2>
-    <p>
+        <style>
+            h1, h2, h3, h4 {
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Cabeçalho -->
+        <h1>
+        <img src="https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/r0rx7o4jm6jy2uvzt7xk" alt="Logo Dio.me" width="100px">
+        Módulo 1 - Primeiros Passos com HTML
+        </h1>
 
-    </p>
+        <!-- Menu de navegação sites -->
+        <a href="index.html">Sobre</a> |
+        <a href="origin.html">Conhecendo a Web</a> |
+        <a href="introduction.html">Introdução ao HTML</a>
+        <hr size="4" color="#a1a1a1"/>
+    
+        <!-- Conteúdo -->
+        <h2 id="origem-web">Conhecendo a Web</h2>
+        <p>
+            Saber um pouco sobre a origem dos computadores e da internet ajuda a perceber o quanto evoluímos nesse processo, olhar para o passado ajuda a compreender o presente.
+            A comunicação client x server entre os diferentes dispositivos e as liguagens de programação frontend e backend.
+        </p>
 
-    <ul>
-        <li><a href="#history">História da Web</a></li>
-        <li><a href="#clients">O que são Clients?</a></li>
-        <li><a href="#servers">O que são Servers?</a></li>
-        <li><a href="#languages">Linguagens de Programação</a></li>
-    </ul>
+        <h3>Índice</h3>
+        <ul>
+            <li><a href="#history">História da Web</a></li>
+            <li><a href="#clients">Comunicação <i>Clients</i> x <i>Servers?</i></a></li>
+            <li><a href="#languages">Linguagens de Programação</a></li>
+        </ul>
+        <hr />
 
-
-    <h3 id="history">História da Web</h3>
-    <h4>Os primeiros computadores: 5 Gerações de muita evolução</h4>
-    <!-- <img src="https://chsi.harvard.edu/files/markihousing.jpg" width="400px" height="300px" alt="computador mark 1" title="Mark 1 (1944)">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/ENIAC_Penn1.jpg" width="400px" height="300px" alt="computador eniac" title="Eniac (1946)"> -->
-    <!-- <img src="https://cdn.britannica.com/15/25015-050-180E683B/computer-Colossus-Bletchley-Park-Buckinghamshire-England-Funding-1943.jpg" width="400px" height="300px" alt="computador colossus" title="Colossus (1946)"> -->
-    <picture>
+        <h3 id="history">História da Web</h3>
+        <h4>Os primeiros computadores: 5 Gerações de muita evolução</h4>
         <img src="https://qph.cf2.quoracdn.net/main-qimg-05520648cae94e9de05a841b5aa8ef52-lq" width="1024px" alt="Evolução dos computadores" >
-        <figcaption>Evolução da Informática</figcaption>
-    </picture>
-    <p>
-        Da necessidade de realizar cálculos matemáticos desde antes de cristo até os dias atuais, foram criadas ferramentas e equipamentos para ajudar a aumentar a velocidade de resposta destes cálculos e possibilitar o emprego
-        destes resultados em diversas áreas de atuação do ser humando.
-        Começando pelo Ábaco e evoluindo cada vez mais com equipamentos que ocupavam salas inteiras movido a válvula depois  
-    </p>
-    <blockquote cite="https://pt.quora.com/Como-foi-a-evolu%C3%A7%C3%A3o-cronol%C3%B3gica-dos-computadores">
-        Alguns estudiosos preferem acrescentar a “Quinta Geração de Computadores” com o aparecimento dos supercomputadores, utilizados por grandes corporações como a NASA. Nessa geração, é possível avaliar a evolução da tecnologia multimídia, da robótica e da internet.
-    </blockquote>
-    <span><a href="#origem-web">Voltar ao topo ☝</a></span>
+        <p>
+            Da necessidade de realizar cálculos matemáticos desde antes de cristo até os dias atuais, foram criadas ferramentas e equipamentos para ajudar a aumentar a velocidade de resposta destes cálculos e possibilitar o emprego
+            destes resultados em diversas áreas de atuação do ser humando.
+            Começando pelo Ábaco e evoluindo cada vez mais com equipamentos que ocupavam salas inteiras movido a válvula depois  
+        </p>
+        <blockquote cite="https://pt.quora.com/Como-foi-a-evolu%C3%A7%C3%A3o-cronol%C3%B3gica-dos-computadores">
+            Alguns estudiosos preferem acrescentar a “Quinta Geração de Computadores” com o aparecimento dos supercomputadores, utilizados por grandes corporações como a NASA. Nessa geração, é possível avaliar a evolução da tecnologia multimídia, da robótica e da internet.
+        </blockquote>
+        <span><a href="#origem-web">Voltar ao topo ☝</a></span>
 
-    
-    <h3 id="clients">O que são <i>Clients?</i></h3>
-    <a href="#origem-web">Índice ☝</a>
-
-    <h3 id="servers">O que são <i>Servers?</i></h3>
-    <a href="#origem-web">Índice ☝</a>
-    
-    <h3 id="languages">Linguagens de Programação</h3>
-    <a href="#origem-web">Índice ☝</a>
-</body>
+        
+        <h3 id="clients">Comunicação <i>Clients</i> x <i>Servers?</i></h3>
+        <img src="https://codelogica.wordpress.com/wp-content/uploads/2018/05/front-end4x.jpg" width="600px" height="400px" alt="comunicação client server">
+        <p>
+            Os Clients são as pessoas que consomem a informação da internet por meio de algum dispositivo no navegador(browser), essa solicitação (requisição) de informações são encaminhadas 
+            aos servidores que cuidam de buscar responder a estas requisições e diferentes fontes de bados, base de dados, outros servidores. 
+        </p>
+        
+        <h3 id="languages">Linguagens de Programação</h3>
+        <img src="https://media.licdn.com/dms/image/C4D12AQHGQZI-fIkkqA/article-cover_image-shrink_423_752/0/1520127309439?e=1717632000&v=beta&t=nrUfja6EcCoaBiE2GLjgDjAXm4wWD1qGY6j6aPjEoEI" alt="linguagens de programação"><br>
+        <font size="5" color="red">HTML não é linguagem de programação! É um arquivo de marcação.</font>
+        <p>Exemplo de código HTML:</p>
+        <pre>
+            &lt;p&gt
+                Eu curto demais a &lt;strong&gt;&lt;i&gt;DIO!/i></strong>
+            &lt;/p&gt
+            Resultado:
+            Eu curto demais a <strong>DIO</strong>!
+            
+        </pre>
+        <h4>Front-end x Back-end</h4>
+        <p>
+            <strong>Front-end (client-side):</strong> São todas as tecnologias que atuam em linha de interface de usuário para promover menus, formulários, 
+            blocos de conteúdo, barras de navegação, campos de busca, entre outros elementos de comunicação e GUI (Graphical User Interface). 
+            No contexto web as linguagens front-end prescrevem a comunicação entre browser e usuário. Isso significa que tudo o que é possível 
+            ver e interagir ao navegar entre as páginas de um website foi construído por uma ou mais ferramentas front-end. Nesta página, 
+            por exemplo, podemos acessar alguns links, visualizar algumas imagens e movimentar o conteúdo para cima e para baixo. 
+            Isso é tecnologia front-end. Atualmente a tríade mais consagrada entre os programadores é HTML, CSS e JavaScript – três linguagens
+            que um desenvolver front-end precisa conhecer muito bem. Existe ainda bibliotecas e frameworks como Bootstrap, jQuery, Knockout, 
+            Backbone.js e D3.js que auxiliam na construção desses projetos.
+        </p>
+        <p>
+            <strong>Back-end (server-side):</strong> São todas as tecnologias inseridas em processamento de dados e interação com as bases de negócios de um sistema. 
+            Em outras palavras, trata-se da funcionalidade interna de um programa. Por essa razão tudo o que estiver regrado a segurança, performance, 
+            upgrade e manipulação de dados faz parte da camada back-end. Na programação web o back-end estabelece uma transição de dados entre browser 
+            e servidor que não pode ser compreendida pelo usuário final. Antes de acessar essa página, por exemplo, uma busca pelo IP no gTLDs e ccTLDs 
+            do servidor DNS (Domain Name System) foi realizado e, após encontrado, fez com que o servidor enviasse essas informações que foram interpretadas
+            pelo browser e renderizadas nesse conteúdo. Essa sequência de eventos aconteceu de modo oculto, ou seja, de modo imperceptível à interface 
+            gráfica do utilizador. Isto é tecnologia back-end. Atualmente as principais linguagens back-end são Java, PHP, C#, Go, ASP, Swift e Python. 
+            Todas elas contam com várias bibliotecas e frameworks como Laravel, Eden, Apache Wicket, NHibernate, Django e Gin que facilitam o trabalho do programador.
+        </p>
+        <span><a href="#origem-web">Voltar ao topo ☝</a></span>
+    </body>
 </html>
